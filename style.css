@@ -1,0 +1,875 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Oswald', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    background-color: #F4976C;
+    border-bottom: 3px solid #303C6C;
+    height: 20%;
+}
+
+.navbar .logo {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    color: #303C6C;
+}
+
+.navbar .logo .left-part {
+    font-size: 18px;
+    font-weight: 600;
+    border-right: 1px solid #303C6C;
+    padding-right: 10px ;
+}
+
+.navbar .logo .right-part {
+    font-size: 11px;
+    margin-left: 10px;
+    font-weight: 300;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: flex-end;
+    width: 40%;
+    font-size: 16px;
+}
+
+.nav-menu .nav-link {
+    color: #303C6C;
+}
+
+.nav-menu .nav-link:hover {
+    color: #B4DFE5;
+}
+
+.navbar .search-container {
+    display: flex;
+    align-self: flex-end;
+}
+
+.search-container .search-input:focus{
+    outline: none;
+}
+
+.search-container button {
+    height: 33px;
+    width: 33px;
+    font-size: 14;
+    padding: 5px;
+    background-color: #F4976C;
+    margin-left: 0;
+    border: 1px solid #303C6C;
+    align-self: flex-end;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    color: #303C6C;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.search-container button:hover {
+    background-color: #B4DFE5;
+}
+
+.search-container .search-input{
+    font-size: 14px;
+    padding: 5px;
+    border: 1px solid #303C6C;
+    background-color: #F4976C;
+    font-family: 'Oswald', sans-serif;
+    height: 33px;
+    width: 150px;
+    color: #303C6C;
+}
+
+.search-input::-webkit-input-placeholder {
+    font-family: 'Oswald', sans-serif;
+    color: #303C6C;
+}
+
+#slider {
+    overflow: hidden;
+    position: relative;
+    background: black;
+    height: 80%
+}
+
+#slider::after {
+    content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #303C6C;
+	opacity: 0.5;
+}
+
+#slider figure {
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+    position: relative;
+    height: 100%;
+}
+
+#slider figure img {
+    width: 20%;
+    float: left;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateY(-80%);
+    transform: translateX(-50%);
+    width: 100%;
+    background: rgba(48, 60, 108, 0.8);
+    bottom: 0;
+    color: #D1FDFE;
+    padding-left: 20px;
+    z-index: 1;
+}
+
+.slider-description h5 {
+    font-size: 26px;
+}
+
+.slider-description p {
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.section {
+    background-color: #B4DFE5;
+    height: 100vh;
+}
+
+.section-title {
+    background-color: #F4976C;
+    text-align: center;
+    color: #303C6C;
+    height: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-title h1 {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 88%;
+    padding: 30px 20px;
+}
+
+.card {
+    position: relative;
+    background-color: burlywood;
+    display: flex;
+    margin: 12px;    
+    background-size: cover;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.card:hover::after {
+    content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+    height: 100%;
+    width: 100%;
+	opacity: 0.5;
+    border-radius: 10px;
+    background-color: #303C6C;
+}
+
+.card::after {
+    content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #303C6C;
+	opacity: 0.7;
+    border-radius: 10px;
+}
+
+.card:nth-child(1) {
+    background-image: url(./img/computer-science.jpg);
+}
+
+.card:nth-child(2) {
+    background-image: url(./img/electronics.jpg);
+}
+
+.card:nth-child(3) {
+    background-image: url(./img/math.jpg);
+}
+
+.card:nth-child(4) {
+    background-image: url(./img/automatics.jpg);
+}
+
+.card:nth-child(5) {
+    background-image: url(./img/electricity.jpg);
+}
+
+.card:nth-child(6) {
+    background-image: url(./img/civile-engineering.jpg);
+}
+
+.card h3 {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translateY(-42%);
+    transform: translateX(-50%);
+    color: #B4DFE5;
+    z-index: 1;
+    width: 100%;
+    font-size: 28px;
+    text-align: center;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+
+    20% {
+        left: 0;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    95% {
+        left: -300%;
+    }
+
+    100% {
+        left: -400%;
+    }
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    /* CSS */
+    .navbar {
+        height: 15%;
+    }
+
+    .navbar .logo .left-part {
+        font-size: 24px;
+        font-weight: 600;
+        border-right: 2px solid #303C6C;
+        padding-right: 20px ;
+    }
+    
+    .navbar .logo .right-part {
+        font-size: 14px;
+        margin-left: 20px;
+        font-weight: 300;
+    }
+
+    .nav-menu {
+        font-size: 22px;
+        width: 50%;
+    }
+
+    .search-container button {
+        height: 35px;
+        width: 35px;
+    }
+
+    .search-container .search-input {
+        width: 200px;
+        height: 35px;
+    }
+
+    #slider {
+        height: 85%;
+    }
+
+    .slider-description {
+        top: 85%;
+        left: 50%;
+        transform: translateY(-85%);
+        transform: translateX(-50%);
+    }
+
+    .slider-description h5 {
+        font-size: 36px;
+    }
+
+    .slider-description p {
+        font-size: 24px;
+    }
+
+    .section-title h1 {
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    .cards {
+        padding: 80px 60px;
+    }
+
+    .card {
+        margin: 20px;
+    }
+
+    .card h3 {
+        font-size: 36px;
+    }
+
+}
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    /* CSS */
+    .navbar {
+        height: 20%;
+    }
+
+    .navbar .logo .left-part {
+        font-size: 17px;
+        font-weight: 600;
+        border-right: 1px solid #303C6C;
+        padding-right: 10px ;
+    }
+    
+    .navbar .logo .right-part {
+        font-size: 11px;
+        margin-left: 10px;
+        font-weight: 300;
+    }
+
+    .nav-menu {
+        font-size: 16px;
+        width: 40%;
+    }
+
+    .search-container button {
+        height: 30px;
+        width: 30px;
+    }
+
+    .search-container .search-input {
+        width: 150px;
+        height: 30px;
+    }
+
+    #slider {
+        height: 80%;
+    }
+
+    .slider-description {
+        top: 85%;
+        left: 50%;
+        transform: translateY(-85%);
+        transform: translateX(-50%);
+    }
+
+    .slider-description h5 {
+        font-size: 22px;
+    }
+
+    .slider-description p {
+        font-size: 14px;
+    }
+
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    /* CSS */
+    .navbar {
+        height: 20%;
+    }
+
+    .navbar .logo .left-part {
+        font-size: 16px;
+        font-weight: 600;
+        border-right: 1px solid #303C6C;
+        padding-right: 10px ;
+    }
+    
+    .navbar .logo .right-part {
+        font-size: 10px;
+        margin-left: 10px;
+        font-weight: 300;
+    }
+
+    .nav-menu {
+        font-size: 14px;
+        width: 40%;
+    }
+
+    .search-container button {
+        height: 30px;
+        width: 30px;
+    }
+
+    .search-container .search-input {
+        width: 120px;
+        height: 30px;
+    }
+
+    #slider {
+        height: 80%;
+    }
+
+    .slider-description {
+        top: 85%;
+        left: 50%;
+        transform: translateY(-85%);
+        transform: translateX(-50%);
+    }
+
+    .slider-description h5 {
+        font-size: 20px;
+    }
+
+    .slider-description p {
+        font-size: 12px;
+    }
+
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+    
+    /* CSS */
+    /* CSS */
+    .navbar {
+        height: 20%;
+    }
+
+    .navbar .logo .left-part {
+        font-size: 16px;
+        font-weight: 600;
+        border-right: 1px solid #303C6C;
+        padding-right: 10px ;
+    }
+    
+    .navbar .logo .right-part {
+        font-size: 10px;
+        margin-left: 10px;
+        font-weight: 300;
+    }
+
+    .nav-menu {
+        font-size: 14px;
+        width: 40%;
+    }
+
+    .search-container button {
+        height: 30px;
+        width: 30px;
+    }
+
+    .search-container .search-input {
+        width: 120px;
+        height: 30px;
+    }
+
+    #slider {
+        height: 80%;
+    }
+
+    .slider-description {
+        top: 85%;
+        left: 50%;
+        transform: translateY(-85%);
+        transform: translateX(-50%);
+    }
+
+    .slider-description h5 {
+        font-size: 20px;
+    }
+
+    .slider-description p {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+    /* CSS */
+    .navbar {
+        height: 35%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar .logo .left-part {
+        font-size: 14px;
+        font-weight: 600;
+        border-right: 0.5px solid #303C6C;
+        padding-right: 8px ;
+    }
+    
+    .navbar .logo .right-part {
+        font-size: 9.5px;
+        margin-left: 8px;
+        font-weight: 300;
+    }
+
+    .nav-menu {
+        font-size: 14px;
+        width: 75%;
+        margin-top: 15px;
+        align-self: center;
+    }
+
+    .navbar .search-container {
+        align-self: center;
+        margin-top: 15px;
+        width: 50%;
+    }
+
+    .search-container button {
+        height: 25px;
+        width: 25px;
+    }
+
+    .search-container .search-input {
+        width: 100%;
+        height: 25px;
+    }
+
+    #slider {
+        height: 65%;
+    }
+
+    .slider-description {
+        top: 85%;
+        left: 50%;
+        transform: translateY(-85%);
+        transform: translateX(-50%);
+        padding-left: 10px;
+    }
+
+    .slider-description h5 {
+        font-size: 16px;
+    }
+
+    .slider-description p {
+        font-size: 10px;
+    }
+
+    .section-title h1 {
+        font-size: 30px;
+    }
+
+    .cards {
+        padding: 10px 5px;
+    }
+
+    .card {
+        margin: 10px;
+    }
+
+    .card h3 {
+        font-size: 24px;
+    }
+
+    .card:nth-child(1) h3, 
+    .card:nth-child(6) h3 {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translateY(-30%);
+        transform: translateX(-50%);
+    }
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    /* CSS */
+    .navbar {
+        height: 30%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 25px;
+        padding-bottom: 20px;
+    }
+
+    .navbar .logo .left-part {
+        font-size: 14px;
+        font-weight: 600;
+        border-right: 0.5px solid #303C6C;
+        padding-right: 8px ;
+    }
+    
+    .navbar .logo .right-part {
+        font-size: 9.5px;
+        margin-left: 8px;
+        font-weight: 300;
+    }
+
+    .nav-menu {
+        font-size: 14px;
+        width: 95%;
+        margin-top: 5px;
+        align-self: center;
+    }
+
+    .navbar .search-container {
+        align-self: center;
+        margin-top: 15px;
+        width: 70%;
+        margin-bottom: 10px;
+    }
+
+    .search-container button {
+        height: 25px;
+        width: 25px;
+    }
+
+    .search-container .search-input {
+        width: 100%;
+        height: 25px;
+    }
+
+    #slider {
+        height: 70%;
+    }
+
+    .slider-description {
+        top: 80%;
+        left: 50%;
+        transform: translateY(-80%);
+        transform: translateX(-50%);
+        padding-left: 10px;
+    }
+
+    .slider-description h5 {
+        font-size: 16px;
+    }
+
+    .slider-description p {
+        font-size: 10px;
+    }
+
+    .section-title h1 {
+        font-size: 26px;
+    }
+
+    .cards {
+        grid-template-columns: auto auto;
+        padding: 5px 2px;
+    }
+
+    .card {
+        margin: 6px;
+    }
+
+    .card h3 {
+        font-size: 23px;
+    }
+
+    .card h3 {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translateY(-35%);
+        transform: translateX(-50%);
+    }
+
+    .card:nth-child(1) h3, 
+    .card:nth-child(6) h3 {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateY(-20%);
+        transform: translateX(-50%);
+    }
+} 
+
+@media (max-width: 319px) {
+    .navbar {
+        height: 30%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar .logo .left-part {
+        font-size: 14px;
+        font-weight: 600;
+        border-right: 0.5px solid #303C6C;
+        padding-right: 8px ;
+    }
+    
+    .navbar .logo .right-part {
+        font-size: 9.5px;
+        margin-left: 8px;
+        font-weight: 300;
+    }
+
+    .nav-menu {
+        font-size: 14px;
+        width: 100%;
+        margin-top: 15px;
+        align-self: center;
+    }
+
+    .navbar .search-container {
+        align-self: center;
+        margin-top: 15px;
+        width: 90%;
+    }
+
+    .search-container button {
+        height: 25px;
+        width: 25px;
+    }
+
+    .search-container .search-input {
+        width: 100%;
+        height: 25px;
+    }
+
+    #slider {
+        height: 70%;
+    }
+
+    .slider-description {
+        top: 80%;
+        left: 50%;
+        transform: translateY(-80%);
+        transform: translateX(-50%);
+        padding-left: 10px;
+    }
+
+    .slider-description h5 {
+        font-size: 16px;
+    }
+
+    .slider-description p {
+        font-size: 10px;
+    }
+
+    .section-title h1 {
+        font-size: 26px;
+    }
+
+    .cards {
+        grid-template-columns: auto auto;
+        padding: 5px 2px;
+    }
+
+    .card {
+        margin: 6px;
+    }
+
+    .card h3 {
+        font-size: 23px;
+    }
+
+    .card h3 {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translateY(-40%);
+        transform: translateX(-50%);
+    }
+
+    .card:nth-child(1) h3, 
+    .card:nth-child(6) h3 {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translateY(-30%);
+        transform: translateX(-50%);
+    }
+}
