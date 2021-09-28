@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/9d26a8cd9d.js" crossorigin="anonymous"></script>
     <title>Relizane University</title>
   </head>
-  <body>
+  <body> 
     <header>
       <nav class="navbar">
         <div class="logo">
@@ -24,22 +25,15 @@
         </div>
         <ul class="nav-menu">
           <li class="nav-item">
-            <a href="#" class="nav-link">Departments</a>
+            <a class="nav-link" onclick="document.getElementById('departments-target').scrollIntoView();">Departments</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Study Online</a>
+            <a class="nav-link" onclick="document.getElementById('about-target').scrollIntoView();">About</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Formations</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">About</a>
+            <a class="nav-link" onclick="document.getElementById('directory-target').scrollIntoView();">Directory</a>
           </li>
         </ul>
-        <div class="search-container">
-          <input type="text" placeholder="Search..." class="search-input">
-          <button><i class="fa fa-search"></i></button>
-        </div>
       </nav>
       <section id="slider">
         <figure>
@@ -56,12 +50,12 @@
       </section> 
     </header>
     <main>
-      <section class="section">
+      <section class="section cards-section" id="departments-target">
         <div class="section-title">
           <h1>Departments</h1>
         </div>
         <div class="cards">
-          <div class="card">
+          <div class="card" id="computer-science-link">
             <h3>Computer Science</h3>
           </div>
           <div class="card">
@@ -81,11 +75,229 @@
           </div>
         </div>
       </section>
+      <section class="section" id="about-target">
+        <div class="section-title">
+          <h1>Our Institut in Numbers</h1>
+        </div>
+        <div class="numbers-section-content">
+          <div class="stats">
+            <div class="stat">
+              <div class="counter" data-target='1500'>0</div>
+              <h4>Students</h4>
+            </div>
+            <div class="stat">
+              <div class="counter" data-target='30'>0</div>
+              <h4>Teachers</h4>
+            </div>
+            <div class="stat">
+              <div class="counter" data-target='2700'>0</div>
+              <h4>Graduates</h4>
+            </div>
+            <div class="stat">
+              <div class="counter" data-target='5'>0</div>
+              <h4>Laboratories</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section"> 
+        <div class="section-title">
+          <h1>Useful Documents</h1>
+        </div>
+        <div class="files-section-content">
+          <div class="files-cards">
+            <div class="file-card">
+              <a href="#">Understad The LMD System</a>
+              <button><i class="fas fa-file-download"></i></button>
+            </div>
+            <div class="file-card">
+              <a href="#">Internal Regulation</a>
+              <button><i class="fas fa-file-download"></i></button>
+            </div>
+            <div class="file-card">
+              <a href="#">Lorem ipsum dolor sit amet consectetur.</a>
+              <button><i class="fas fa-file-download"></i></button>
+            </div>
+            <div class="file-card">
+              <a href="#">Lorem ipsum dolor sit.</a>
+              <button><i class="fas fa-file-download"></i></button>
+            </div>
+            <div class="file-card">
+              <a href="#">Lorem ipsum dolor sit amet.</a>
+              <button><i class="fas fa-file-download"></i></button>
+            </div>
+            <div class="file-card">
+              <a href="#">Sit amet consectetur adipisicing.</a>
+              <button><i class="fas fa-file-download"></i></button>
+            </div>
+            <div class="file-card">
+              <a href="#">Consectetur adipisicing elit.</a>
+              <button><i class="fas fa-file-download"></i></button>
+            </div>
+            <div class="file-card">
+              <a href="#">Adipisicing elit. A, dolorem?</a>
+              <button><i class="fas fa-file-download"></i></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="directory-target">
+        <div class="section-title">
+          <h1>Directory</h1>
+        </div>
+        <div class="directory-section-content">
+          <div class="directory-cards">
+            <div class="directory-card">
+              <div class="left-col">
+                <img src="./img/person.png" alt="person">
+              </div>
+              <div class="right-col">
+                <h5>Lorem ipsum dolor sit.</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <p>Lorem ipsum dolor sit.</p>
+              </div>
+            </div>
+            <div class="directory-card">
+              <div class="left-col">
+                <img src="./img/person.png" alt="person">
+              </div>
+              <div class="right-col">
+                <h5>Lorem ipsum dolor sit.</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <p>Lorem ipsum dolor sit.</p>
+              </div>
+            </div>
+            <div class="directory-card">
+              <div class="left-col">
+                <img src="./img/person.png" alt="person">
+              </div>
+              <div class="right-col">
+                <h5>Lorem ipsum dolor sit.</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <p>Lorem ipsum dolor sit.</p>
+              </div>
+            </div>
+            <div class="directory-card">
+              <div class="left-col">
+                <img src="./img/person.png" alt="person">
+              </div>
+              <div class="right-col">
+                <h5>Lorem ipsum dolor sit.</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <p>Lorem ipsum dolor sit.</p>
+              </div>
+            </div>
+            <div class="directory-card">
+              <div class="left-col">
+                <img src="./img/person.png" alt="person">
+              </div>
+              <div class="right-col">
+                <h5>Lorem ipsum dolor sit.</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <p>Lorem ipsum dolor sit.</p>
+              </div>
+            </div>
+            <div class="directory-card">
+              <div class="left-col">
+                <img src="./img/person.png" alt="person">
+              </div>
+              <div class="right-col">
+                <h5>Lorem ipsum dolor sit.</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <p>Lorem ipsum dolor sit.</p>
+              </div>
+            </div>
+            <div class="directory-card">
+              <div class="left-col">
+                <img src="./img/person.png" alt="person">
+              </div>
+              <div class="right-col">
+                <h5>Lorem ipsum dolor sit.</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <p>Lorem ipsum dolor sit.</p>
+              </div>
+            </div>
+            <div class="directory-card">
+              <div class="left-col">
+                <img src="./img/person.png" alt="person">
+              </div>
+              <div class="right-col">
+                <h5>Lorem ipsum dolor sit.</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <p>Lorem ipsum dolor sit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
-
+      <div class="top-part">
+        <div class="col">
+          <div class="col-title">
+            <h4>Useful Links</h4>
+          </div>
+          <div class="col-links">
+            <div class="col-link">
+              <a href="#">Ministry of Higher Education and Scientific Research</a>
+            </div>
+            <div class="col-link">
+              <a href="#">Directorate General for Scientific Research and Technological Development</a>
+            </div>
+            <div class="col-link">
+              <a href="#">Scientific and Technical Information Reserach Center</a>
+            </div>
+            <div class="col-link">
+              <a href="#">Algerian Search Network</a>
+            </div>
+            <div class="col-link">
+              <a href="#">Algerian Universities Network</a>
+            </div>
+            <div class="col-link">
+              <a href="#">Directorate of Education of the state of Relizane</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="col-title">
+            <h4>Virtual Platforms</h4>
+          </div>
+          <div class="col-links">
+            <div class="col-link">
+              <a href="#">Moodle Platform</a>
+            </div>
+            <div class="col-link">
+              <a href="#">E-learning</a>
+            </div>
+            <div class="col-link">
+              <a href="#">Registration of new PhD students</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="col-title">
+            <h4>Contact</h4>
+          </div>
+          <div class="col-links">
+            <h5><span>Address: </span>Baramadiyeh, Relizane City</h5>
+            <h5><span>Telephone: </span>055667788</h5>
+            <a href="mailto: test@mail.com" class="email-link"><span>Email: </span>test@mail.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-part">
+        <div class="copyrights">
+          <h5>Copyright &copy; 2021 Relizane University, Science and Technology Institut</h5>
+        </div>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
     </footer>
   </body>
+  <script src="./main.js"></script>
 </html>
 
 
